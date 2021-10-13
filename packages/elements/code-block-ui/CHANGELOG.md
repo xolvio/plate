@@ -1,5 +1,109 @@
 # @udecode/plate-code-block-ui
 
+## 5.1.0
+
+### Patch Changes
+
+- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+  - @udecode/plate-common@5.1.0
+  - @udecode/plate-code-block@5.1.0
+  - @udecode/plate-styled-components@5.1.0
+  - @udecode/plate-toolbar@5.1.0
+
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`53d13cbc`](https://github.com/udecode/plate/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec)]:
+  - @udecode/plate-toolbar@5.0.1
+
+## 5.0.0
+
+### Patch Changes
+
+- [#1086](https://github.com/udecode/plate/pull/1086) [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - fix `contentEditable` error
+
+- Updated dependencies [[`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
+  - @udecode/plate-toolbar@5.0.0
+
+## 4.4.0
+
+### Patch Changes
+
+- [#1090](https://github.com/udecode/plate/pull/1090) [`7c32d4ef`](https://github.com/udecode/plate/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e) Thanks [@dylans](https://github.com/dylans)! - Add configuration options for code-block syntax highlighting
+
+- Updated dependencies [[`7c32d4ef`](https://github.com/udecode/plate/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e), [`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+  - @udecode/plate-code-block@4.4.0
+  - @udecode/plate-common@4.4.0
+  - @udecode/plate-styled-components@4.4.0
+  - @udecode/plate-toolbar@4.4.0
+
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+  - @udecode/plate-core@4.3.7
+  - @udecode/plate-common@4.3.7
+  - @udecode/plate-code-block@4.3.7
+  - @udecode/plate-styled-components@4.3.7
+  - @udecode/plate-toolbar@4.3.7
+
+## 4.3.6
+
+### Patch Changes
+
+- [#1083](https://github.com/udecode/plate/pull/1083) [`826a1c0a`](https://github.com/udecode/plate/commit/826a1c0a048e4e52a3d04e21a7325e9b05f3dd89) Thanks [@dylans](https://github.com/dylans)! - Prevent event propagation for clicking on syntax highlight language selector
+
+## 4.3.5
+
+### Patch Changes
+
+- Updated dependencies [[`8525af01`](https://github.com/udecode/plate/commit/8525af01b2ca705665bad3ada73b8e906620dad8)]:
+  - @udecode/plate-code-block@4.3.5
+
+## 4.3.4
+
+### Patch Changes
+
+- [#1079](https://github.com/udecode/plate/pull/1079) [`fe1ff731`](https://github.com/udecode/plate/commit/fe1ff731f7757603fde06c5d042ec2e1a2e4305a) Thanks [@dylans](https://github.com/dylans)! - Syntax highlighting select element should not be editable
+
+## 4.3.3
+
+### Patch Changes
+
+- [#1070](https://github.com/udecode/plate/pull/1070) [`39b29f66`](https://github.com/udecode/plate/commit/39b29f66216d8cb26ac142f57cbee220e9ee2570) Thanks [@dylans](https://github.com/dylans)! - add missing key for iterating over languages for syntax highlighting
+
+## 4.3.2
+
+### Patch Changes
+
+- [#1076](https://github.com/udecode/plate/pull/1076) [`56ff3d62`](https://github.com/udecode/plate/commit/56ff3d6235a9d8aaeb76d9bc8ec229850af9c891) Thanks [@dylans](https://github.com/dylans)! - Add missing export from index barrel for code-block-ui
+
+## 4.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`a692c078`](https://github.com/udecode/plate/commit/a692c078f9386ebb63aea9cb704decf554b07e8e)]:
+  - @udecode/plate-code-block@4.3.1
+
+## 4.3.0
+
+### Minor Changes
+
+- [#1055](https://github.com/udecode/plate/pull/1055) [`7b892a59`](https://github.com/udecode/plate/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a) Thanks [@dylans](https://github.com/dylans)! - changes:
+  - enable syntax highlighting for `code_block`
+  - new prop to `code_block` node: `lang?: string`
+
+### Patch Changes
+
+- Updated dependencies [[`7b892a59`](https://github.com/udecode/plate/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a), [`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+  - @udecode/plate-code-block@4.3.0
+  - @udecode/plate-core@4.3.0
+  - @udecode/plate-common@4.3.0
+  - @udecode/plate-styled-components@4.3.0
+  - @udecode/plate-toolbar@4.3.0
+
 ## 4.2.0
 
 ### Patch Changes

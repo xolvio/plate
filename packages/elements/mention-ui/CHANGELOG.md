@@ -1,5 +1,131 @@
 # @udecode/plate-mention-ui
 
+## 5.2.3
+
+### Patch Changes
+
+- Updated dependencies [[`25b359a2`](https://github.com/udecode/plate/commit/25b359a23df79bc3b5f710fe9f58c4b549c72e75)]:
+  - @udecode/plate-combobox@5.2.3
+  - @udecode/plate-mention@5.2.3
+
+## 5.2.2
+
+### Patch Changes
+
+- Updated dependencies [[`b8f2f97b`](https://github.com/udecode/plate/commit/b8f2f97be28db3f0eb4e8e5222dabe5aa0c2fb3b)]:
+  - @udecode/plate-combobox@5.2.2
+  - @udecode/plate-mention@5.2.2
+
+## 5.2.1
+
+### Patch Changes
+
+- [#1117](https://github.com/udecode/plate/pull/1117) [`07d4df63`](https://github.com/udecode/plate/commit/07d4df63f8358cdf9dd34242e4ffb4eb5e4c4e73) Thanks [@dylans](https://github.com/dylans)! - changes:
+
+  - customizable `createMentionNode`
+  - missing default for `id`
+
+- [#1119](https://github.com/udecode/plate/pull/1119) [`882308a8`](https://github.com/udecode/plate/commit/882308a81a5ed18669c8209d8b74d3fca76a4dd2) Thanks [@dylans](https://github.com/dylans)! - changes:
+
+  - add `searchPattern` similar to previous `mentionableSearchPattern`
+
+- Updated dependencies [[`07d4df63`](https://github.com/udecode/plate/commit/07d4df63f8358cdf9dd34242e4ffb4eb5e4c4e73), [`882308a8`](https://github.com/udecode/plate/commit/882308a81a5ed18669c8209d8b74d3fca76a4dd2)]:
+  - @udecode/plate-mention@5.2.1
+  - @udecode/plate-combobox@5.2.1
+
+## 5.2.0
+
+### Minor Changes
+
+- [#1116](https://github.com/udecode/plate/pull/1116) [`86837955`](https://github.com/udecode/plate/commit/86837955ebcdf7d93e10cdcfe3a97181611500bf) Thanks [@dylans](https://github.com/dylans)! - mention, reintroduce insertSpaceAfterMention, decouple id from pluginKey
+
+### Patch Changes
+
+- [#1112](https://github.com/udecode/plate/pull/1112) [`9910a511`](https://github.com/udecode/plate/commit/9910a511998649641e3938f3569eed1ded711842) Thanks [@dylans](https://github.com/dylans)! - `Mention`: `getMentionOnSelectItem` now receives an optional pluginKey
+
+- Updated dependencies [[`9910a511`](https://github.com/udecode/plate/commit/9910a511998649641e3938f3569eed1ded711842), [`86837955`](https://github.com/udecode/plate/commit/86837955ebcdf7d93e10cdcfe3a97181611500bf)]:
+  - @udecode/plate-mention@5.2.0
+
+## 5.1.1
+
+### Patch Changes
+
+- [#1110](https://github.com/udecode/plate/pull/1110) [`73ca0d4e`](https://github.com/udecode/plate/commit/73ca0d4ef46c77423926721a6e14dc09cd45e45a) Thanks [@dylans](https://github.com/dylans)!
+  - Improve type definitions for MentionCombobox
+  - Allow override of id, trigger when invoking MentionCombobox
+- Updated dependencies [[`73ca0d4e`](https://github.com/udecode/plate/commit/73ca0d4ef46c77423926721a6e14dc09cd45e45a)]:
+  - @udecode/plate-combobox@5.1.1
+  - @udecode/plate-mention@5.1.1
+
+## 5.1.0
+
+### Patch Changes
+
+- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+  - @udecode/plate-common@5.1.0
+  - @udecode/plate-mention@5.1.0
+  - @udecode/plate-combobox@5.1.0
+  - @udecode/plate-styled-components@5.1.0
+
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @udecode/plate-combobox@5.0.1
+  - @udecode/plate-mention@5.0.1
+
+## 5.0.0
+
+### Major Changes
+
+- [#1086](https://github.com/udecode/plate/pull/1086) [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - changes:
+  - removed `MentionSelect` in favor of `MentionCombobox`
+
+### Minor Changes
+
+- [#1086](https://github.com/udecode/plate/pull/1086) [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - feat:
+  - new dependency: `"@udecode/plate-combobox": "4.4.0"`
+  - new component: `MentionCombobox` – default props:
+    - `trigger: '@'`
+    - `id: ELEMENT_MENTION`
+    - `onSelectItem: onSelectMentionItem`
+
+### Patch Changes
+
+- Updated dependencies [[`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
+  - @udecode/plate-combobox@5.0.0
+  - @udecode/plate-mention@5.0.0
+
+## 4.4.0
+
+### Patch Changes
+
+- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+  - @udecode/plate-common@4.4.0
+  - @udecode/plate-mention@4.4.0
+  - @udecode/plate-styled-components@4.4.0
+
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+  - @udecode/plate-core@4.3.7
+  - @udecode/plate-common@4.3.7
+  - @udecode/plate-mention@4.3.7
+  - @udecode/plate-styled-components@4.3.7
+
+## 4.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+  - @udecode/plate-core@4.3.0
+  - @udecode/plate-common@4.3.0
+  - @udecode/plate-mention@4.3.0
+  - @udecode/plate-styled-components@4.3.0
+
 ## 3.5.1
 
 ### Patch Changes

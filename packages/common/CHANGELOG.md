@@ -1,5 +1,33 @@
 # @udecode/plate-common
 
+## 5.1.0
+
+### Patch Changes
+
+- [#1105](https://github.com/udecode/plate/pull/1105) [`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a) Thanks [@aj-foster](https://github.com/aj-foster)! - Allow options passed to isSelectionAtBlockStart
+
+## 4.4.0
+
+### Minor Changes
+
+- [#1085](https://github.com/udecode/plate/pull/1085) [`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37) Thanks [@ghingis](https://github.com/ghingis)! - `removeMark`:
+  - `key` can be an array (to remove multiple marks)
+  - `options` are extended so we can use other location than `editor.selection`
+
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+  - @udecode/plate-core@4.3.7
+
+## 4.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+  - @udecode/plate-core@4.3.0
+
 ## 3.4.0
 
 ### Patch Changes

@@ -1,5 +1,61 @@
 # @udecode/plate-alignment-ui
 
+## 5.1.0
+
+### Patch Changes
+
+- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+  - @udecode/plate-common@5.1.0
+  - @udecode/plate-alignment@5.1.0
+  - @udecode/plate-styled-components@5.1.0
+  - @udecode/plate-toolbar@5.1.0
+
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`53d13cbc`](https://github.com/udecode/plate/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec)]:
+  - @udecode/plate-toolbar@5.0.1
+
+## 5.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
+  - @udecode/plate-toolbar@5.0.0
+
+## 4.4.0
+
+### Patch Changes
+
+- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+  - @udecode/plate-common@4.4.0
+  - @udecode/plate-alignment@4.4.0
+  - @udecode/plate-styled-components@4.4.0
+  - @udecode/plate-toolbar@4.4.0
+
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+  - @udecode/plate-core@4.3.7
+  - @udecode/plate-common@4.3.7
+  - @udecode/plate-alignment@4.3.7
+  - @udecode/plate-styled-components@4.3.7
+  - @udecode/plate-toolbar@4.3.7
+
+## 4.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+  - @udecode/plate-core@4.3.0
+  - @udecode/plate-common@4.3.0
+  - @udecode/plate-alignment@4.3.0
+  - @udecode/plate-styled-components@4.3.0
+  - @udecode/plate-toolbar@4.3.0
+
 ## 4.2.0
 
 ### Patch Changes

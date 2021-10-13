@@ -1,5 +1,355 @@
 # @udecode/plate
 
+## 5.2.3
+
+### Patch Changes
+
+- Updated dependencies [[`25b359a2`](https://github.com/udecode/plate/commit/25b359a23df79bc3b5f710fe9f58c4b549c72e75)]:
+  - @udecode/plate-combobox@5.2.3
+  - @udecode/plate-mention@5.2.3
+  - @udecode/plate-mention-ui@5.2.3
+
+## 5.2.2
+
+### Patch Changes
+
+- Updated dependencies [[`b8f2f97b`](https://github.com/udecode/plate/commit/b8f2f97be28db3f0eb4e8e5222dabe5aa0c2fb3b)]:
+  - @udecode/plate-combobox@5.2.2
+  - @udecode/plate-mention@5.2.2
+  - @udecode/plate-mention-ui@5.2.2
+
+## 5.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`07d4df63`](https://github.com/udecode/plate/commit/07d4df63f8358cdf9dd34242e4ffb4eb5e4c4e73), [`882308a8`](https://github.com/udecode/plate/commit/882308a81a5ed18669c8209d8b74d3fca76a4dd2)]:
+  - @udecode/plate-mention@5.2.1
+  - @udecode/plate-mention-ui@5.2.1
+  - @udecode/plate-combobox@5.2.1
+
+## 5.2.0
+
+### Patch Changes
+
+- Updated dependencies [[`9910a511`](https://github.com/udecode/plate/commit/9910a511998649641e3938f3569eed1ded711842), [`86837955`](https://github.com/udecode/plate/commit/86837955ebcdf7d93e10cdcfe3a97181611500bf)]:
+  - @udecode/plate-mention@5.2.0
+  - @udecode/plate-mention-ui@5.2.0
+
+## 5.1.1
+
+### Patch Changes
+
+- Updated dependencies [[`73ca0d4e`](https://github.com/udecode/plate/commit/73ca0d4ef46c77423926721a6e14dc09cd45e45a)]:
+  - @udecode/plate-mention-ui@5.1.1
+  - @udecode/plate-combobox@5.1.1
+  - @udecode/plate-mention@5.1.1
+
+## 5.1.0
+
+### Patch Changes
+
+- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a), [`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+  - @udecode/plate-list@5.1.0
+  - @udecode/plate-common@5.1.0
+  - @udecode/plate-list-ui@5.1.0
+  - @udecode/plate-ast-serializer@5.1.0
+  - @udecode/plate-md-serializer@5.1.0
+  - @udecode/plate-autoformat@5.1.0
+  - @udecode/plate-break@5.1.0
+  - @udecode/plate-dnd@5.1.0
+  - @udecode/plate-alignment@5.1.0
+  - @udecode/plate-alignment-ui@5.1.0
+  - @udecode/plate-basic-elements@5.1.0
+  - @udecode/plate-block-quote@5.1.0
+  - @udecode/plate-block-quote-ui@5.1.0
+  - @udecode/plate-code-block@5.1.0
+  - @udecode/plate-code-block-ui@5.1.0
+  - @udecode/plate-heading@5.1.0
+  - @udecode/plate-horizontal-rule@5.1.0
+  - @udecode/plate-image@5.1.0
+  - @udecode/plate-image-ui@5.1.0
+  - @udecode/plate-link@5.1.0
+  - @udecode/plate-link-ui@5.1.0
+  - @udecode/plate-media-embed@5.1.0
+  - @udecode/plate-media-embed-ui@5.1.0
+  - @udecode/plate-mention@5.1.0
+  - @udecode/plate-mention-ui@5.1.0
+  - @udecode/plate-paragraph@5.1.0
+  - @udecode/plate-table@5.1.0
+  - @udecode/plate-table-ui@5.1.0
+  - @udecode/plate-find-replace@5.1.0
+  - @udecode/plate-find-replace-ui@5.1.0
+  - @udecode/plate-basic-marks@5.1.0
+  - @udecode/plate-font@5.1.0
+  - @udecode/plate-font-ui@5.1.0
+  - @udecode/plate-highlight@5.1.0
+  - @udecode/plate-kbd@5.1.0
+  - @udecode/plate-node-id@5.1.0
+  - @udecode/plate-normalizers@5.1.0
+  - @udecode/plate-placeholder@5.1.0
+  - @udecode/plate-reset-node@5.1.0
+  - @udecode/plate-select@5.1.0
+  - @udecode/plate-csv-serializer@5.1.0
+  - @udecode/plate-html-serializer@5.1.0
+  - @udecode/plate-serializer@5.1.0
+  - @udecode/plate-trailing-block@5.1.0
+  - @udecode/plate-combobox@5.1.0
+  - @udecode/plate-popper@5.1.0
+  - @udecode/plate-styled-components@5.1.0
+  - @udecode/plate-toolbar@5.1.0
+
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`53d13cbc`](https://github.com/udecode/plate/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec), [`53d13cbc`](https://github.com/udecode/plate/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec), [`53d13cbc`](https://github.com/udecode/plate/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec)]:
+  - @udecode/plate-toolbar@5.0.1
+  - @udecode/plate-popper@5.0.1
+  - @udecode/plate-alignment-ui@5.0.1
+  - @udecode/plate-code-block-ui@5.0.1
+  - @udecode/plate-image-ui@5.0.1
+  - @udecode/plate-link-ui@5.0.1
+  - @udecode/plate-list-ui@5.0.1
+  - @udecode/plate-table-ui@5.0.1
+  - @udecode/plate-find-replace-ui@5.0.1
+  - @udecode/plate-font-ui@5.0.1
+  - @udecode/plate-combobox@5.0.1
+  - @udecode/plate-mention@5.0.1
+  - @udecode/plate-mention-ui@5.0.1
+
+## 5.0.0
+
+### Minor Changes
+
+- [#1086](https://github.com/udecode/plate/pull/1086) [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - new exports:
+  - `@udecode/plate-combobox`
+  - `@udecode/plate-popper`
+
+### Patch Changes
+
+- Updated dependencies [[`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8), [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
+  - @udecode/plate-code-block-ui@5.0.0
+  - @udecode/plate-combobox@5.0.0
+  - @udecode/plate-popper@5.0.0
+  - @udecode/plate-mention@5.0.0
+  - @udecode/plate-mention-ui@5.0.0
+  - @udecode/plate-toolbar@5.0.0
+  - @udecode/plate-alignment-ui@5.0.0
+  - @udecode/plate-image-ui@5.0.0
+  - @udecode/plate-link-ui@5.0.0
+  - @udecode/plate-list-ui@5.0.0
+  - @udecode/plate-table-ui@5.0.0
+  - @udecode/plate-find-replace-ui@5.0.0
+  - @udecode/plate-font-ui@5.0.0
+
+## 4.4.0
+
+### Patch Changes
+
+- Updated dependencies [[`c353b008`](https://github.com/udecode/plate/commit/c353b0085804fa9099f0c18405ca01b0b25da03a), [`7c32d4ef`](https://github.com/udecode/plate/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e), [`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+  - @udecode/plate-list@4.4.0
+  - @udecode/plate-basic-elements@4.4.0
+  - @udecode/plate-code-block@4.4.0
+  - @udecode/plate-code-block-ui@4.4.0
+  - @udecode/plate-common@4.4.0
+  - @udecode/plate-list-ui@4.4.0
+  - @udecode/plate-ast-serializer@4.4.0
+  - @udecode/plate-md-serializer@4.4.0
+  - @udecode/plate-autoformat@4.4.0
+  - @udecode/plate-break@4.4.0
+  - @udecode/plate-dnd@4.4.0
+  - @udecode/plate-alignment@4.4.0
+  - @udecode/plate-alignment-ui@4.4.0
+  - @udecode/plate-block-quote@4.4.0
+  - @udecode/plate-block-quote-ui@4.4.0
+  - @udecode/plate-heading@4.4.0
+  - @udecode/plate-horizontal-rule@4.4.0
+  - @udecode/plate-image@4.4.0
+  - @udecode/plate-image-ui@4.4.0
+  - @udecode/plate-link@4.4.0
+  - @udecode/plate-link-ui@4.4.0
+  - @udecode/plate-media-embed@4.4.0
+  - @udecode/plate-media-embed-ui@4.4.0
+  - @udecode/plate-mention@4.4.0
+  - @udecode/plate-mention-ui@4.4.0
+  - @udecode/plate-paragraph@4.4.0
+  - @udecode/plate-table@4.4.0
+  - @udecode/plate-table-ui@4.4.0
+  - @udecode/plate-find-replace@4.4.0
+  - @udecode/plate-find-replace-ui@4.4.0
+  - @udecode/plate-basic-marks@4.4.0
+  - @udecode/plate-font@4.4.0
+  - @udecode/plate-font-ui@4.4.0
+  - @udecode/plate-highlight@4.4.0
+  - @udecode/plate-kbd@4.4.0
+  - @udecode/plate-node-id@4.4.0
+  - @udecode/plate-normalizers@4.4.0
+  - @udecode/plate-placeholder@4.4.0
+  - @udecode/plate-reset-node@4.4.0
+  - @udecode/plate-select@4.4.0
+  - @udecode/plate-csv-serializer@4.4.0
+  - @udecode/plate-html-serializer@4.4.0
+  - @udecode/plate-serializer@4.4.0
+  - @udecode/plate-trailing-block@4.4.0
+  - @udecode/plate-styled-components@4.4.0
+  - @udecode/plate-toolbar@4.4.0
+
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+  - @udecode/plate-core@4.3.7
+  - @udecode/plate-autoformat@4.3.7
+  - @udecode/plate-break@4.3.7
+  - @udecode/plate-common@4.3.7
+  - @udecode/plate-dnd@4.3.7
+  - @udecode/plate-alignment@4.3.7
+  - @udecode/plate-alignment-ui@4.3.7
+  - @udecode/plate-basic-elements@4.3.7
+  - @udecode/plate-block-quote@4.3.7
+  - @udecode/plate-block-quote-ui@4.3.7
+  - @udecode/plate-code-block@4.3.7
+  - @udecode/plate-code-block-ui@4.3.7
+  - @udecode/plate-heading@4.3.7
+  - @udecode/plate-horizontal-rule@4.3.7
+  - @udecode/plate-image@4.3.7
+  - @udecode/plate-image-ui@4.3.7
+  - @udecode/plate-link@4.3.7
+  - @udecode/plate-link-ui@4.3.7
+  - @udecode/plate-list@4.3.7
+  - @udecode/plate-list-ui@4.3.7
+  - @udecode/plate-media-embed@4.3.7
+  - @udecode/plate-media-embed-ui@4.3.7
+  - @udecode/plate-mention@4.3.7
+  - @udecode/plate-mention-ui@4.3.7
+  - @udecode/plate-paragraph@4.3.7
+  - @udecode/plate-table@4.3.7
+  - @udecode/plate-table-ui@4.3.7
+  - @udecode/plate-find-replace@4.3.7
+  - @udecode/plate-find-replace-ui@4.3.7
+  - @udecode/plate-basic-marks@4.3.7
+  - @udecode/plate-font@4.3.7
+  - @udecode/plate-font-ui@4.3.7
+  - @udecode/plate-highlight@4.3.7
+  - @udecode/plate-kbd@4.3.7
+  - @udecode/plate-node-id@4.3.7
+  - @udecode/plate-normalizers@4.3.7
+  - @udecode/plate-placeholder@4.3.7
+  - @udecode/plate-reset-node@4.3.7
+  - @udecode/plate-select@4.3.7
+  - @udecode/plate-ast-serializer@4.3.7
+  - @udecode/plate-csv-serializer@4.3.7
+  - @udecode/plate-html-serializer@4.3.7
+  - @udecode/plate-md-serializer@4.3.7
+  - @udecode/plate-serializer@4.3.7
+  - @udecode/plate-trailing-block@4.3.7
+  - @udecode/plate-styled-components@4.3.7
+  - @udecode/plate-toolbar@4.3.7
+
+## 4.3.6
+
+### Patch Changes
+
+- Updated dependencies [[`826a1c0a`](https://github.com/udecode/plate/commit/826a1c0a048e4e52a3d04e21a7325e9b05f3dd89)]:
+  - @udecode/plate-code-block-ui@4.3.6
+
+## 4.3.5
+
+### Patch Changes
+
+- Updated dependencies [[`8525af01`](https://github.com/udecode/plate/commit/8525af01b2ca705665bad3ada73b8e906620dad8)]:
+  - @udecode/plate-code-block@4.3.5
+  - @udecode/plate-basic-elements@4.3.5
+  - @udecode/plate-code-block-ui@4.3.5
+  - @udecode/plate-ast-serializer@4.3.5
+  - @udecode/plate-md-serializer@4.3.5
+
+## 4.3.4
+
+### Patch Changes
+
+- Updated dependencies [[`fe1ff731`](https://github.com/udecode/plate/commit/fe1ff731f7757603fde06c5d042ec2e1a2e4305a)]:
+  - @udecode/plate-code-block-ui@4.3.4
+
+## 4.3.3
+
+### Patch Changes
+
+- Updated dependencies [[`39b29f66`](https://github.com/udecode/plate/commit/39b29f66216d8cb26ac142f57cbee220e9ee2570)]:
+  - @udecode/plate-code-block-ui@4.3.3
+
+## 4.3.2
+
+### Patch Changes
+
+- Updated dependencies [[`56ff3d62`](https://github.com/udecode/plate/commit/56ff3d6235a9d8aaeb76d9bc8ec229850af9c891)]:
+  - @udecode/plate-code-block-ui@4.3.2
+
+## 4.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`a692c078`](https://github.com/udecode/plate/commit/a692c078f9386ebb63aea9cb704decf554b07e8e)]:
+  - @udecode/plate-code-block@4.3.1
+  - @udecode/plate-basic-elements@4.3.1
+  - @udecode/plate-code-block-ui@4.3.1
+  - @udecode/plate-ast-serializer@4.3.1
+  - @udecode/plate-md-serializer@4.3.1
+
+## 4.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`7b892a59`](https://github.com/udecode/plate/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a), [`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+  - @udecode/plate-code-block@4.3.0
+  - @udecode/plate-code-block-ui@4.3.0
+  - @udecode/plate-core@4.3.0
+  - @udecode/plate-basic-elements@4.3.0
+  - @udecode/plate-ast-serializer@4.3.0
+  - @udecode/plate-md-serializer@4.3.0
+  - @udecode/plate-autoformat@4.3.0
+  - @udecode/plate-break@4.3.0
+  - @udecode/plate-common@4.3.0
+  - @udecode/plate-dnd@4.3.0
+  - @udecode/plate-alignment@4.3.0
+  - @udecode/plate-alignment-ui@4.3.0
+  - @udecode/plate-block-quote@4.3.0
+  - @udecode/plate-block-quote-ui@4.3.0
+  - @udecode/plate-heading@4.3.0
+  - @udecode/plate-horizontal-rule@4.3.0
+  - @udecode/plate-image@4.3.0
+  - @udecode/plate-image-ui@4.3.0
+  - @udecode/plate-link@4.3.0
+  - @udecode/plate-link-ui@4.3.0
+  - @udecode/plate-list@4.3.0
+  - @udecode/plate-list-ui@4.3.0
+  - @udecode/plate-media-embed@4.3.0
+  - @udecode/plate-media-embed-ui@4.3.0
+  - @udecode/plate-mention@4.3.0
+  - @udecode/plate-mention-ui@4.3.0
+  - @udecode/plate-paragraph@4.3.0
+  - @udecode/plate-table@4.3.0
+  - @udecode/plate-table-ui@4.3.0
+  - @udecode/plate-find-replace@4.3.0
+  - @udecode/plate-find-replace-ui@4.3.0
+  - @udecode/plate-basic-marks@4.3.0
+  - @udecode/plate-font@4.3.0
+  - @udecode/plate-font-ui@4.3.0
+  - @udecode/plate-highlight@4.3.0
+  - @udecode/plate-kbd@4.3.0
+  - @udecode/plate-node-id@4.3.0
+  - @udecode/plate-normalizers@4.3.0
+  - @udecode/plate-placeholder@4.3.0
+  - @udecode/plate-reset-node@4.3.0
+  - @udecode/plate-select@4.3.0
+  - @udecode/plate-csv-serializer@4.3.0
+  - @udecode/plate-html-serializer@4.3.0
+  - @udecode/plate-serializer@4.3.0
+  - @udecode/plate-trailing-block@4.3.0
+  - @udecode/plate-styled-components@4.3.0
+  - @udecode/plate-toolbar@4.3.0
+
 ## 4.2.0
 
 ### Patch Changes

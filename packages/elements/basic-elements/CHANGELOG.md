@@ -1,5 +1,67 @@
 # @udecode/plate-basic-elements
 
+## 5.1.0
+
+### Patch Changes
+
+- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+  - @udecode/plate-common@5.1.0
+  - @udecode/plate-block-quote@5.1.0
+  - @udecode/plate-code-block@5.1.0
+  - @udecode/plate-heading@5.1.0
+  - @udecode/plate-paragraph@5.1.0
+
+## 4.4.0
+
+### Patch Changes
+
+- [#1090](https://github.com/udecode/plate/pull/1090) [`7c32d4ef`](https://github.com/udecode/plate/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e) Thanks [@dylans](https://github.com/dylans)! - Add configuration options for code-block syntax highlighting
+
+- Updated dependencies [[`7c32d4ef`](https://github.com/udecode/plate/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e), [`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+  - @udecode/plate-code-block@4.4.0
+  - @udecode/plate-common@4.4.0
+  - @udecode/plate-block-quote@4.4.0
+  - @udecode/plate-heading@4.4.0
+  - @udecode/plate-paragraph@4.4.0
+
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+  - @udecode/plate-core@4.3.7
+  - @udecode/plate-common@4.3.7
+  - @udecode/plate-block-quote@4.3.7
+  - @udecode/plate-code-block@4.3.7
+  - @udecode/plate-heading@4.3.7
+  - @udecode/plate-paragraph@4.3.7
+
+## 4.3.5
+
+### Patch Changes
+
+- Updated dependencies [[`8525af01`](https://github.com/udecode/plate/commit/8525af01b2ca705665bad3ada73b8e906620dad8)]:
+  - @udecode/plate-code-block@4.3.5
+
+## 4.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`a692c078`](https://github.com/udecode/plate/commit/a692c078f9386ebb63aea9cb704decf554b07e8e)]:
+  - @udecode/plate-code-block@4.3.1
+
+## 4.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`7b892a59`](https://github.com/udecode/plate/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a), [`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+  - @udecode/plate-code-block@4.3.0
+  - @udecode/plate-core@4.3.0
+  - @udecode/plate-common@4.3.0
+  - @udecode/plate-block-quote@4.3.0
+  - @udecode/plate-heading@4.3.0
+  - @udecode/plate-paragraph@4.3.0
+
 ## 3.4.0
 
 ### Patch Changes
