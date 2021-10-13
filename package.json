@@ -27,7 +27,7 @@
     "release:publish:latest": "lerna publish --force-publish",
     "release:publish:next": "lerna publish --dist-tag next --force-publish",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "jest packages/leading-block/src/createLeadingBlockPlugin.spec.tsx",
     "test:cov": "yarn test --coverage",
     "test:covw": "yarn test:cov --watch",
     "test:covwa": "yarn test:cov --watchAll",
