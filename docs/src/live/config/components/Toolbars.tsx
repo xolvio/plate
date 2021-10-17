@@ -17,6 +17,8 @@ import { FormatAlignJustify } from '@styled-icons/material/FormatAlignJustify';
 import { FormatAlignLeft } from '@styled-icons/material/FormatAlignLeft';
 import { FormatAlignRight } from '@styled-icons/material/FormatAlignRight';
 import { FormatBold } from '@styled-icons/material/FormatBold';
+import { FormatIndentDecrease } from '@styled-icons/material/FormatIndentDecrease';
+import { FormatIndentIncrease } from '@styled-icons/material/FormatIndentIncrease';
 import { FormatItalic } from '@styled-icons/material/FormatItalic';
 import { FormatListBulleted } from '@styled-icons/material/FormatListBulleted';
 import { FormatListNumbered } from '@styled-icons/material/FormatListNumbered';
@@ -38,10 +40,8 @@ import {
   deleteColumn,
   deleteRow,
   deleteTable,
-  ELEMENT_ALIGN_CENTER,
-  ELEMENT_ALIGN_JUSTIFY,
-  ELEMENT_ALIGN_RIGHT,
   ELEMENT_BLOCKQUOTE,
+  ELEMENT_CODE_BLOCK,
   ELEMENT_H1,
   ELEMENT_H2,
   ELEMENT_H3,
@@ -51,26 +51,29 @@ import {
   ELEMENT_OL,
   ELEMENT_UL,
   getPlatePluginType,
+  getPreventDefaultHandler,
+  indent,
   insertTable,
   MARK_BOLD,
   MARK_CODE,
+  MARK_HIGHLIGHT,
   MARK_ITALIC,
   MARK_KBD,
   MARK_STRIKETHROUGH,
   MARK_SUBSCRIPT,
   MARK_SUPERSCRIPT,
   MARK_UNDERLINE,
+  outdent,
   ToolbarAlign,
+  ToolbarButton,
+  ToolbarCodeBlock,
   ToolbarElement,
   ToolbarList,
   ToolbarMark,
   ToolbarTable,
+  useEventEditorId,
   useStoreEditorRef,
 } from '@udecode/plate';
-import { ELEMENT_CODE_BLOCK } from '@udecode/plate-code-block';
-import { ToolbarCodeBlock } from '@udecode/plate-code-block-ui';
-import { useEventEditorId } from '@udecode/plate-core';
-import { MARK_HIGHLIGHT } from '@udecode/plate-highlight';
 
 export const ToolbarButtonsBasicElements = () => {
   const editor = useStoreEditorRef(useEventEditorId('focus'));
@@ -113,6 +116,23 @@ export const ToolbarButtonsBasicElements = () => {
   );
 };
 
+export const ToolbarButtonsIndent = () => {
+  const editor = useStoreEditorRef(useEventEditorId('focus'));
+
+  return (
+    <>
+      <ToolbarButton
+        onMouseDown={editor && getPreventDefaultHandler(outdent, editor)}
+        icon={<FormatIndentDecrease />}
+      />
+      <ToolbarButton
+        onMouseDown={editor && getPreventDefaultHandler(indent, editor)}
+        icon={<FormatIndentIncrease />}
+      />
+    </>
+  );
+};
+
 export const ToolbarButtonsList = () => {
   const editor = useStoreEditorRef(useEventEditorId('focus'));
 
@@ -131,23 +151,12 @@ export const ToolbarButtonsList = () => {
 };
 
 export const ToolbarButtonsAlign = () => {
-  const editor = useStoreEditorRef(useEventEditorId('focus'));
-
   return (
     <>
-      <ToolbarAlign icon={<FormatAlignLeft />} />
-      <ToolbarAlign
-        type={getPlatePluginType(editor, ELEMENT_ALIGN_CENTER)}
-        icon={<FormatAlignCenter />}
-      />
-      <ToolbarAlign
-        type={getPlatePluginType(editor, ELEMENT_ALIGN_RIGHT)}
-        icon={<FormatAlignRight />}
-      />
-      <ToolbarAlign
-        type={getPlatePluginType(editor, ELEMENT_ALIGN_JUSTIFY)}
-        icon={<FormatAlignJustify />}
-      />
+      <ToolbarAlign align="left" icon={<FormatAlignLeft />} />
+      <ToolbarAlign align="center" icon={<FormatAlignCenter />} />
+      <ToolbarAlign align="right" icon={<FormatAlignRight />} />
+      <ToolbarAlign align="justify" icon={<FormatAlignJustify />} />
     </>
   );
 };

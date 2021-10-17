@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { DefaultLeaf, RenderLeafProps } from 'slate-react';
+import { DefaultLeaf } from 'slate-react';
 import { EditableProps } from 'slate-react/dist/components/editable';
 import { PlatePlugin } from '../types/PlatePlugin/PlatePlugin';
 import { SPEditor } from '../types/SPEditor';
+import { pipeOverrideProps } from './pipeOverrideProps';
 
 /**
  * @see {@link RenderLeaf}
@@ -15,16 +16,20 @@ export const pipeRenderLeaf = (
     (plugin) => plugin.renderLeaf?.(editor) ?? []
   );
 
-  return (props) => {
-    const leafProps: RenderLeafProps = { ...props }; // workaround for children readonly error.
+  const propsOverriders = plugins.flatMap(
+    (plugin) => plugin.overrideProps?.(editor) ?? []
+  );
+
+  return (renderLeafProps) => {
+    const props = pipeOverrideProps(renderLeafProps, propsOverriders);
 
     renderLeafs.forEach((renderLeaf) => {
-      const newChildren = renderLeaf(leafProps);
+      const newChildren = renderLeaf(props);
       if (newChildren !== undefined) {
-        leafProps.children = newChildren;
+        props.children = newChildren;
       }
     });
 
-    return <DefaultLeaf {...leafProps} />;
+    return <DefaultLeaf {...props} />;
   };
 };

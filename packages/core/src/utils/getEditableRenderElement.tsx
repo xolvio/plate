@@ -1,21 +1,22 @@
 import * as React from 'react';
 import { castArray } from 'lodash';
 import { DefaultElement } from 'slate-react';
-import { PlatePluginComponent } from '../types/PlatePluginOptions/PlateOptions';
+import {
+  PlatePluginComponent,
+  PlatePluginOptions,
+} from '../types/PlatePluginOptions/PlateOptions';
 import { RenderNodeOptions } from '../types/PlatePluginOptions/RenderNodeOptions';
-import { TRenderElementProps } from '../types/TRenderElementProps';
-import { getSlateClass } from './getSlateClass';
+import { SPRenderElementProps } from '../types/SPRenderElementProps';
+import { getRenderNodeProps } from './getRenderNodeProps';
 
 /**
  * Get a `Editable.renderElement` handler for `options.type`.
  * If the type is equals to the slate element type, render `options.component`.
  * Else, return `undefined` so the pipeline can check the next plugin.
  */
-export const getEditableRenderElement = (
-  options: RenderNodeOptions | RenderNodeOptions[]
-) => ({ attributes, element, children }: TRenderElementProps) => {
-  const renderNodeProps = { attributes, element, children };
-
+export const getEditableRenderElement = (options: PlatePluginOptions[]) => (
+  props: SPRenderElementProps
+) => {
   const _options = castArray<RenderNodeOptions>(options);
 
   for (const option of _options) {
@@ -26,27 +27,19 @@ export const getEditableRenderElement = (
       overrideProps,
     } = option;
 
+    const { element, children } = props;
+
     if (element.type === type) {
-      const nodeProps =
-        getNodeProps?.(renderNodeProps) ?? element.attributes ?? {};
-
-      let props: any = {};
-
-      if (overrideProps) {
-        props =
-          typeof overrideProps === 'function'
-            ? overrideProps(renderNodeProps)
-            : overrideProps;
-      }
+      const nodeProps = getRenderNodeProps({
+        attributes: element.attributes,
+        getNodeProps,
+        overrideProps,
+        props,
+        type,
+      });
 
       return (
-        <Element
-          className={getSlateClass(type)}
-          attributes={attributes}
-          element={element}
-          nodeProps={nodeProps}
-          {...props}
-        >
+        <Element {...props} {...nodeProps}>
           {children}
         </Element>
       );

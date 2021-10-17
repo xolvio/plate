@@ -1,5 +1,64 @@
 # @udecode/plate-alignment
 
+## 6.0.0
+
+### Major Changes
+
+- [#1154](https://github.com/udecode/plate/pull/1154) by [@zbeyens](https://github.com/zbeyens) –
+
+  - `createAlignPlugin`:
+    - this plugin is no longer wrapping a block, but instead setting an `align` field to an existing block
+    - removed `pluginKeys`, `renderElement` and `deserialize`
+  - removed:
+    - `ELEMENT_ALIGN_LEFT`
+    - `ELEMENT_ALIGN_CENTER`
+    - `ELEMENT_ALIGN_RIGHT`
+    - `ELEMENT_ALIGN_JUSTIFY`
+    - `KEYS_ALIGN` in favor of `KEY_ALIGN`
+    - `getAlignDeserialize`
+    - `upsertAlign` in favor of `setAlign`
+
+  Migration (normalizer):
+
+  - for each node:
+    - run `parent = getParent(editor, path)`, if `parent[0].type` is one of the alignment values:
+      - run `setAlign(editor, { align }, { at: path })`
+      - run `unwrapNodes(editor, { at: path })`
+
+### Minor Changes
+
+- [#1154](https://github.com/udecode/plate/pull/1154) by [@zbeyens](https://github.com/zbeyens) –
+  - `KEY_ALIGNMENT`
+  - `DEFAULT_ALIGNMENTS`
+  - `DEFAULT_ALIGNMENT`
+  - `getAlignOverrideProps`
+  - `setAlign`
+  - types:
+    - `AlignPluginOptions`
+
+## 5.3.5
+
+### Patch Changes
+
+- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+  - @udecode/plate-common@5.3.5
+
+## 5.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+  - @udecode/plate-core@5.3.1
+  - @udecode/plate-common@5.3.1
+
+## 5.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+  - @udecode/plate-core@5.3.0
+  - @udecode/plate-common@5.3.0
+
 ## 5.1.0
 
 ### Patch Changes

@@ -3,11 +3,12 @@ import {
   findNode,
   getNodes,
   isCollapsed,
+  isRangeAcrossBlocks,
   setNodes,
   wrapNodes,
 } from '@udecode/plate-common';
 import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
-import { Editor, Node, NodeEntry, Path, Range } from 'slate';
+import { Editor, Node, NodeEntry, Range } from 'slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../defaults';
 import { getListItemEntry, getListTypes } from '../queries';
 import { unwrapList } from './unwrapList';
@@ -18,7 +19,7 @@ export const toggleList = (editor: SPEditor, { type }: { type: string }) =>
       return;
     }
 
-    if (isCollapsed(editor.selection)) {
+    if (isCollapsed(editor.selection) || !isRangeAcrossBlocks(editor)) {
       // selection is collapsed
       const res = getListItemEntry(editor);
 
@@ -61,8 +62,8 @@ export const toggleList = (editor: SPEditor, { type }: { type: string }) =>
       }
     } else {
       // selection is a range
-      const [startPoint, endPoint] = Range.edges(editor.selection!);
 
+      const [startPoint, endPoint] = Range.edges(editor.selection!);
       const commonEntry = Node.common(editor, startPoint.path, endPoint.path);
 
       if (
@@ -90,7 +91,7 @@ export const toggleList = (editor: SPEditor, { type }: { type: string }) =>
             { type },
             {
               at: editor.selection,
-              match: (n: TElement, path: Path) =>
+              match: (n, path) =>
                 getListTypes(editor).includes(n.type) &&
                 path.length >= rangeLength,
               mode: 'all',

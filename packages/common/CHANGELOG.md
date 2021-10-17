@@ -1,5 +1,35 @@
 # @udecode/plate-common
 
+## 6.0.0
+
+### Minor Changes
+
+- [#1154](https://github.com/udecode/plate/pull/1154) by [@zbeyens](https://github.com/zbeyens) – `unsetNodes`
+
+### Patch Changes
+
+- [#1154](https://github.com/udecode/plate/pull/1154) by [@zbeyens](https://github.com/zbeyens) – fix: EditorNodesOptions `at` option
+
+## 5.3.5
+
+### Patch Changes
+
+- [#1146](https://github.com/udecode/plate/pull/1146) [`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf) Thanks [@ghingis](https://github.com/ghingis)! - fix: `isRangeAcrossBlocks` when one of the edges is in an inline element
+
+## 5.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+  - @udecode/plate-core@5.3.1
+
+## 5.3.0
+
+### Patch Changes
+
+- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+  - @udecode/plate-core@5.3.0
+
 ## 5.1.0
 
 ### Patch Changes

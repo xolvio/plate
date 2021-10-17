@@ -10,7 +10,8 @@ import {
 } from '@udecode/plate-core';
 import Slate, { Editor, Transforms } from 'slate';
 
-export interface WithSelectOnBackspaceOptions extends QueryNodeOptions {}
+export type SelectOnBackspacePluginOptions = QueryNodeOptions;
+export type WithSelectOnBackspaceOptions = SelectOnBackspacePluginOptions;
 
 /**
  * Set a list of element types to select on backspace
@@ -28,7 +29,7 @@ export const withSelectOnBackspace = (
       });
       if (prevNode) {
         const [prevCell] = Editor.nodes<TNode>(editor, {
-          match: (node) => queryNode([node, prevNode.path], query),
+          match: (node) => queryNode([node as TNode, prevNode.path], query),
           at: prevNode,
         });
 
