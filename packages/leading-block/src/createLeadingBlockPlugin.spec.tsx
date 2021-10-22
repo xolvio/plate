@@ -104,33 +104,32 @@ jsx;
 //   });
 // });
 
-
-it('being on the left most element of a table and pressing up should create a new paragraph above the table', () => {
-  const input = (
-    <editor>
-      <htable><cursor />hello</htable>
-    </editor>
-  ) as any;
-
-  const event = new KeyboardEvent('keyup') as any;
-
-  const output = (
-    <editor>
-      <hp><htext /><cursor /></hp>
-      <htable>hello</htable>
-    </editor>
-  ) as any;
-
-
-  jest.spyOn(isHotkey, 'default').mockReturnValue(true);
-  withLeadingBlock({
-    rules: [{ hotkey: 'up' }],
-    movableBlockTypes: [ELEMENT_TABLE],
-    defaultType: ELEMENT_DEFAULT,
-  })(input)(event);
-
-  expect(input.children).toEqual(output.children);
-});
+// it('being on the left most element of a table and pressing up should create a new paragraph above the table', () => {
+//   const input = (
+//     <editor>
+//       <htable><cursor />hello</htable>
+//     </editor>
+//   ) as any;
+//
+//   const event = new KeyboardEvent('keyup') as any;
+//
+//   const output = (
+//     <editor>
+//       <hp><htext /><cursor /></hp>
+//       <htable>hello</htable>
+//     </editor>
+//   ) as any;
+//
+//
+//   jest.spyOn(isHotkey, 'default').mockReturnValue(true);
+//   withLeadingBlock({
+//     rules: [{ hotkey: 'up' }],
+//     movableBlockTypes: [ELEMENT_TABLE],
+//     defaultType: ELEMENT_DEFAULT,
+//   })(input)(event);
+//
+//   expect(input.children).toEqual(output.children);
+// });
 
 it('with the cursor on an image and pressing left should create a new paragraph above the table', () => {
   const input = (
@@ -151,15 +150,15 @@ it('with the cursor on an image and pressing left should create a new paragraph 
     </editor>
   ) as any;
 
-  console.log(JSON.stringify(input.children));
-  console.log(JSON.stringify(output.children));
-
   jest.spyOn(isHotkey, 'default').mockReturnValue(true);
   withLeadingBlock({
     rules: [{ hotkey: 'left' }],
     movableBlockTypes: [ELEMENT_IMAGE],
     defaultType: ELEMENT_DEFAULT,
   })(input)(event);
+
+  console.log(JSON.stringify(input.children));
+  console.log(JSON.stringify(output.children));
 
   expect(input.children).toEqual(output.children);
 });
