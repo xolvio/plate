@@ -37,6 +37,7 @@ module.exports = {
           type: 'category',
           label: 'Blocks',
           items: [
+            'plugins/yjs',
             'plugins/alignment',
             'plugins/basic-elements',
             'plugins/excalidraw',

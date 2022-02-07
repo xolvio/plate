@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2016",
+    "lib": ["DOM", "ES2020"],
+    "moduleResolution": "node",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "types": ["jest", "node"]
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -222,10 +222,12 @@ import { IFrame } from './examples/iframe/IFrame';
 import { createPreviewPlugin } from './examples/preview-markdown/createPreviewPlugin';
 import { PreviewLeaf } from './examples/preview-markdown/PreviewLeaf/PreviewLeaf';
 import { HighlightHTML } from './utils/HighlightHTML';
+import { Simple } from './Simple';
 
 // Add react-live imports you need here
 const ReactLiveScope = {
   ...React,
+  Simple,
   createTextIndentPlugin,
   getPlateActions,
   usePlateSelectors,

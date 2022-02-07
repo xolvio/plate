@@ -1,0 +1,20 @@
+{
+  "name": "@doclogic/hocuspocus",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node src/index.ts",
+    "dev": "nodemon -e ts --watch ./ --exec yarn start"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15",
+    "slate": "0.70.0",
+    "ts-node": "10.4.0"
+  },
+  "dependencies": {
+    "@hocuspocus/extension-logger": "1.0.0-alpha.64",
+    "@hocuspocus/server": "^1.0.0-alpha.90",
+    "@slate-yjs/core": "0.1.1",
+    "yjs": "13.5.22"
+  }
+}

@@ -1592,6 +1592,27 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@hocuspocus/common@^1.0.0-alpha.4":
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@hocuspocus/common/-/common-1.0.0-alpha.4.tgz#cee54af01e34487e3009e4cbdcfca9ed945cb75c"
+  integrity sha512-LvKj+ASSWnvjFB7n2bl7BUGFKF9XFFP1oA3/XmKl3c7wUIvoN1Ir3sX8XnN6qBA3S2CoruEHHk+KPS6zMSMfHA==
+
+"@hocuspocus/provider@1.0.0-alpha.29":
+  version "1.0.0-alpha.29"
+  resolved "https://registry.yarnpkg.com/@hocuspocus/provider/-/provider-1.0.0-alpha.29.tgz#92f4c247f0d834cdbe6eced93965b9fcf3ed1986"
+  integrity sha512-K8ZWw3LZBmmK5hd8ZoV+fKtxGvzJW8dUQgxDmNPhq0B9q5NWvXT89O64zvWOb5CdVMM9Nbd5pAWBcM5keFKrcw==
+  dependencies:
+    "@hocuspocus/common" "^1.0.0-alpha.4"
+    "@lifeomic/attempt" "^3.0.1"
+    lib0 "^0.2.43"
+    y-protocols "^1.0.5"
+    yjs "^13.5.22"
+
+"@lifeomic/attempt@^3.0.1":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@lifeomic/attempt/-/attempt-3.0.2.tgz#6920d6fa76e911c2d27e5a7c9a5f42aff2292733"
+  integrity sha512-JHRfM7fUit2UroC0xRnuzMGegSTbfvz6X/1PgcIvahXC+A7UsKa8XfR1YrBsvoSu669iMTeNkDb26pSkGOzXKw==
+
 "@mdx-js/mdx@^1.6.21":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.22.tgz#8a723157bf90e78f17dc0f27995398e6c731f1ba"
@@ -1719,6 +1740,20 @@
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
+
+"@slate-yjs/core@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@slate-yjs/core/-/core-0.1.1.tgz#284ef084d68ece5ede0f48ba6fc37e7513c89bd0"
+  integrity sha512-+nP0W/8L+HT4MBayNqkhf4RRCRPjD0JqbCQXdddIBccG2wFmY6H+4zruc23vH7bUtLfGpJo9w4z5Ixz6S5dXSA==
+  dependencies:
+    y-protocols "^1.0.5"
+
+"@slate-yjs/react@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@slate-yjs/react/-/react-0.1.1.tgz#6b146d891650cbd31a2eb30633f88b5e4be1fe58"
+  integrity sha512-WKYU68IoWTjpF55OiJE0M45sUAIsmYJduBberQ1x6lza7v+XmCp2+PsdUjkRmNh8qLFp3o0L3Rgk8i947x4I+A==
+  dependencies:
+    y-protocols "^1.0.5"
 
 "@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
   version "5.4.0"
@@ -2029,7 +2064,7 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
-"@udecode/plate-alignment@9.0.0":
+"@udecode/plate-alignment@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2037,7 +2072,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-autoformat@9.0.0":
+"@udecode/plate-autoformat@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2045,7 +2080,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-basic-elements@9.0.0":
+"@udecode/plate-basic-elements@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2053,7 +2088,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-basic-marks@9.0.0":
+"@udecode/plate-basic-marks@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2061,7 +2096,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-block-quote@9.0.0":
+"@udecode/plate-block-quote@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2069,7 +2104,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-break@9.0.0":
+"@udecode/plate-break@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2077,7 +2112,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-code-block@9.0.0":
+"@udecode/plate-code-block@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2085,7 +2120,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-combobox@9.0.0":
+"@udecode/plate-combobox@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2093,7 +2128,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-core@9.0.0":
+"@udecode/plate-core@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2105,7 +2140,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-find-replace@9.0.0":
+"@udecode/plate-find-replace@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2113,7 +2148,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-font@9.0.0":
+"@udecode/plate-font@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2121,7 +2156,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-heading@9.0.0":
+"@udecode/plate-heading@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2129,7 +2164,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-headless@9.0.0":
+"@udecode/plate-headless@9.4.0":
   version "0.0.0"
   uid ""
 
@@ -2137,7 +2172,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-highlight@9.0.0":
+"@udecode/plate-highlight@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2145,7 +2180,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-horizontal-rule@9.0.0":
+"@udecode/plate-horizontal-rule@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2153,7 +2188,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-image@9.0.0":
+"@udecode/plate-image@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2161,7 +2196,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-indent-list@9.0.0":
+"@udecode/plate-indent-list@9.4.0":
   version "0.0.0"
   uid ""
 
@@ -2169,7 +2204,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-indent@9.0.0":
+"@udecode/plate-indent@9.4.0":
   version "0.0.0"
   uid ""
 
@@ -2177,7 +2212,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-juice@9.0.0":
+"@udecode/plate-juice@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2185,7 +2220,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-kbd@9.0.0":
+"@udecode/plate-kbd@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2193,7 +2228,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-line-height@9.0.0":
+"@udecode/plate-line-height@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2201,7 +2236,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-link@9.0.0":
+"@udecode/plate-link@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2209,7 +2244,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-list@9.0.0":
+"@udecode/plate-list@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2217,7 +2252,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-media-embed@9.0.0":
+"@udecode/plate-media-embed@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2225,7 +2260,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-mention@9.0.0":
+"@udecode/plate-mention@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2233,7 +2268,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-node-id@9.0.0":
+"@udecode/plate-node-id@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2241,7 +2276,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-normalizers@9.0.0":
+"@udecode/plate-normalizers@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2249,7 +2284,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-paragraph@9.0.0":
+"@udecode/plate-paragraph@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2257,7 +2292,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-reset-node@9.0.0":
+"@udecode/plate-reset-node@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2265,7 +2300,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-select@9.0.0":
+"@udecode/plate-select@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2273,7 +2308,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-serializer-csv@9.0.0":
+"@udecode/plate-serializer-csv@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2281,7 +2316,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-serializer-docx@9.0.0":
+"@udecode/plate-serializer-docx@9.4.0":
   version "0.0.0"
   uid ""
 
@@ -2289,7 +2324,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-serializer-md@9.0.0":
+"@udecode/plate-serializer-md@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2297,7 +2332,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-styled-components@9.0.0":
+"@udecode/plate-styled-components@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2305,7 +2340,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-table@9.0.0":
+"@udecode/plate-table@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2317,7 +2352,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-trailing-block@9.0.0":
+"@udecode/plate-trailing-block@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2325,7 +2360,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-alignment@9.0.0":
+"@udecode/plate-ui-alignment@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2333,7 +2368,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-block-quote@9.0.0":
+"@udecode/plate-ui-block-quote@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2341,7 +2376,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-button@9.0.0":
+"@udecode/plate-ui-button@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2349,7 +2384,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-code-block@9.0.0":
+"@udecode/plate-ui-code-block@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2357,7 +2392,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-combobox@9.0.0":
+"@udecode/plate-ui-combobox@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2365,7 +2400,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-dnd@9.0.0":
+"@udecode/plate-ui-dnd@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2373,7 +2408,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-find-replace@9.0.0":
+"@udecode/plate-ui-find-replace@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2381,7 +2416,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-font@9.0.0":
+"@udecode/plate-ui-font@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2393,7 +2428,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-image@9.0.0":
+"@udecode/plate-ui-image@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2401,7 +2436,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-line-height@9.0.0":
+"@udecode/plate-ui-line-height@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2409,7 +2444,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-link@9.0.0":
+"@udecode/plate-ui-link@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2417,7 +2452,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-list@9.0.0":
+"@udecode/plate-ui-list@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2425,7 +2460,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-media-embed@9.0.0":
+"@udecode/plate-ui-media-embed@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2433,7 +2468,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-mention@9.0.0":
+"@udecode/plate-ui-mention@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2441,7 +2476,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-placeholder@9.0.0":
+"@udecode/plate-ui-placeholder@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2449,7 +2484,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-popover@9.0.0":
+"@udecode/plate-ui-popover@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2457,7 +2492,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-popper@9.0.0":
+"@udecode/plate-ui-popper@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2465,7 +2500,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-table@9.0.0":
+"@udecode/plate-ui-table@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2473,7 +2508,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui-toolbar@9.0.0":
+"@udecode/plate-ui-toolbar@9.3.1":
   version "0.0.0"
   uid ""
 
@@ -2481,7 +2516,7 @@
   version "0.0.0"
   uid ""
 
-"@udecode/plate-ui@9.0.0":
+"@udecode/plate-ui@9.4.0":
   version "0.0.0"
   uid ""
 
@@ -2493,17 +2528,10 @@
   version "0.0.0"
   uid ""
 
-"@udecode/zustood@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@udecode/zustood/-/zustood-0.4.0.tgz#f06983bb7f8e8e911d2d1be140cb1f189a2d864b"
-  integrity sha512-mk3fhDdOJHIsv40wzDWLwp2GNGACMrhgdoTnNdFC+W+aYX8uMm3WNpW8/h9xbxR4X6fEpDXdJxapaOJKTMvwiw==
-  dependencies:
-    immer "9.0.6"
-
-"@udecode/zustood@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@udecode/zustood/-/zustood-0.4.1.tgz#ee7a794cd5a6ef2187213021aea62fbb39563fd5"
-  integrity sha512-FBMjICzGmnNN4d6ErFmv6XXP6SIjweFsCvEQ2QLYHkUFG1tBjo+cx7nsxYtekOZH+T6u/QXrOHlZJ5P7hMbXeQ==
+"@udecode/zustood@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@udecode/zustood/-/zustood-0.4.4.tgz#0f3467f1ec3656623c16bb803d64e6dc55ea7b42"
+  integrity sha512-OtkRGu8TKBkidOOf28TY4tqYJRhMAiVt+BF6lHbF/FnXRmOa8eLal8Q/k9sqQcGzQAHBaZYcx0pR1+wlQzaurg==
   dependencies:
     immer "9.0.6"
 
@@ -6417,6 +6445,11 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+isomorphic.js@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/isomorphic.js/-/isomorphic.js-0.2.4.tgz#24ca374163ae54a7ce3b86ce63b701b91aa84969"
+  integrity sha512-Y4NjZceAwaPXctwsHgNsmfuPxR8lJ3f8X7QTAkhltrX4oGIv+eTlgHLXn4tWysC9zGTi929gapnPp+8F8cg7nA==
+
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -6637,6 +6670,13 @@ leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
   integrity sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==
+
+lib0@^0.2.42, lib0@^0.2.43:
+  version "0.2.43"
+  resolved "https://registry.yarnpkg.com/lib0/-/lib0-0.2.43.tgz#1c2ed1fb2e9fe136e92abef7ca56875f2ee66b07"
+  integrity sha512-MJ1KLoz5p3gljIUBfdjjNuL/wlWHHK6+DrcIRhzSRLvtAu1XNdRtRGATYM51KSTI0P2nxJZFQM8rwCH6ga9KUw==
+  dependencies:
+    isomorphic.js "^0.2.4"
 
 lilconfig@^2.0.3:
   version "2.0.4"
@@ -11035,6 +11075,13 @@ xtend@^4.0.0, xtend@^4.0.1, xtend@^4.0.2:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
+y-protocols@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/y-protocols/-/y-protocols-1.0.5.tgz#91d574250060b29fcac8f8eb5e276fbad594245e"
+  integrity sha512-Wil92b7cGk712lRHDqS4T90IczF6RkcvCwAD0A2OPg+adKmOe+nOiT/N2hvpQIWS3zfjmtL4CPaH5sIW1Hkm/A==
+  dependencies:
+    lib0 "^0.2.42"
+
 y18n@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.3.tgz#b5f259c82cd6e336921efd7bfd8bf560de9eeedf"
@@ -11078,6 +11125,20 @@ yargs@^13.3.2:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
+
+yjs@13.5.22:
+  version "13.5.22"
+  resolved "https://registry.yarnpkg.com/yjs/-/yjs-13.5.22.tgz#576a92ff2705736317a8b7a6b18d34fc8e6103f0"
+  integrity sha512-qxsVlu/E2dLUUtJyhDbwkhrw1gWbdE+UWzVI2VEeY6G1M8TYI51VvXSoPC/4QQMNIyEdsCOW2cWxPUyoCH43gw==
+  dependencies:
+    lib0 "^0.2.43"
+
+yjs@^13.5.22:
+  version "13.5.27"
+  resolved "https://registry.yarnpkg.com/yjs/-/yjs-13.5.27.tgz#8fd823cdefe696e74838eb06d8eeebbb9df70dc8"
+  integrity sha512-1cWqmEomMCJTemtKLpEymXU946KZAAS45RxrE3TZAWVjua1wJhUF8192HYnuvOKv3iInxyySDtoMZTPs/afe1w==
+  dependencies:
+    lib0 "^0.2.43"
 
 yocto-queue@^0.1.0:
   version "0.1.0"
