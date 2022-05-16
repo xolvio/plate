@@ -235,10 +235,18 @@ export const TableToolbarButtons = () => (
   </>
 );
 
-export const CollaborationToolbarButtons = ({ onAddThread, fetchContacts }) => (
+export const CollaborationToolbarButtons = ({
+  onAddThread,
+  onSubmitComment,
+  fetchContacts,
+}) => (
   <>
     <AddThreadToolbarButton icon={<CommentAdd />} onAddThread={onAddThread} />
-    <ToggleShowThreadsButton icon={<Comment />} fetchContacts={fetchContacts} />
+    <ToggleShowThreadsButton
+      icon={<Comment />}
+      onSubmitComment={onSubmitComment}
+      fetchContacts={fetchContacts}
+    />
   </>
 );
 

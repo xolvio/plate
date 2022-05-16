@@ -98,6 +98,7 @@ export function Playground() {
         <TableToolbarButtons />
         <CollaborationToolbarButtons
           onAddThread={onAddThread}
+          onSubmitComment={onSubmitComment}
           fetchContacts={fetchContacts}
         />
       </HeadingToolbar>

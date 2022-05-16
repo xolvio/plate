@@ -12,7 +12,7 @@ import { createNullUser, findThreadNodeEntries } from '@xolvio/plate-comments';
 import { determineAbsolutePosition } from '../determineAbsolutePosition';
 import { FetchContacts } from '../FetchContacts';
 import { Thread } from '../Thread';
-import { ThreadPosition } from '../useComments';
+import { OnSubmitComment, ThreadPosition } from '../useComments';
 import {
   createBodyStyles,
   createHeaderStyles,
@@ -31,11 +31,12 @@ export function Threads(
   props: {
     parent: RefObject<HTMLElement>;
     onClose: () => void;
+    onSubmitComment: OnSubmitComment;
     fetchContacts: FetchContacts;
   } & StyledProps
 ) {
   const editor = usePlateEditorRef();
-  const { parent, onClose, fetchContacts } = props;
+  const { parent, onClose, onSubmitComment, fetchContacts } = props;
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState<ThreadPosition | null>(null);
 
@@ -107,7 +108,7 @@ export function Threads(
               key={thread.id}
               thread={thread}
               onSaveComment={() => undefined}
-              onSubmitComment={() => Promise.resolve()}
+              onSubmitComment={onSubmitComment}
               onCancelCreateThread={() => undefined}
               showResolveThreadButton={false}
               showReOpenThreadButton

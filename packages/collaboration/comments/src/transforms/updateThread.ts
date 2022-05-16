@@ -14,18 +14,15 @@ import { ThreadNode, ThreadNodeData } from '../types';
 import { findThreadPath } from './findThreadPath';
 import { wrapWithThread } from './wrapWithThread';
 
-export function upsertThread<T = {}>(
+export function updateThread<T = {}>(
   editor: PlateEditor<T>,
   {
-    at,
     thread,
     elementProps,
   }: { thread: Thread; at?: Location; elementProps?: Partial<ThreadNodeData> }
 ): NodeEntry<ThreadNode> | undefined {
   window.editor = editor;
-  if (!at) {
-    at = findThreadPath(editor, thread);
-  }
+  const at = findThreadPath(editor, thread);
 
   if (at) {
     const type = getPluginType(editor, ELEMENT_THREAD);

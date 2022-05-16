@@ -10,6 +10,7 @@ import {
   ELEMENT_THREAD,
   findThreadNodeEntries,
   Thread,
+  upsertThread,
   upsertThreadAtSelection,
   User,
 } from '@xolvio/plate-comments';
@@ -17,7 +18,10 @@ import { NodeEntry, Transforms } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { determineAbsolutePosition } from './determineAbsolutePosition';
 
-export type OnSubmitComment = (commentText: string) => Promise<void>;
+export type OnSubmitComment = (
+  thread: Thread,
+  commentText: string
+) => Promise<void>;
 
 function replaceElement<T>(
   elements: T[],
@@ -72,6 +76,7 @@ export function useComments({
   onCancelCreateThread: () => void;
 } {
   const editor = usePlateEditorState();
+  window.editor = editor;
   const [thread, setThread] = useState<Thread | null>(null);
   const [threadPosition, setThreadPosition] = useState({ left: 0, top: 0 });
   const [
@@ -171,6 +176,7 @@ export function useComments({
       if (!isThreadNodeTheNewThreadNode) {
         onCancelCreateThread();
       }
+      debugger;
       if (threadNodeEntry && !threadNodeEntry[0].thread.isResolved) {
         showThread(threadNodeEntry);
       } else {
@@ -208,7 +214,7 @@ export function useComments({
 
   const updateThread = useCallback(
     function updateThread(newThread: Thread): void {
-      upsertThreadAtSelection(editor, newThread);
+      upsertThread(editor, { thread: newThread });
       setNewThreadThreadNodeEntry(null);
       setThread(null);
     },
@@ -227,7 +233,10 @@ export function useComments({
   );
 
   const onSubmitComment = useCallback<OnSubmitComment>(
-    async function onSubmitComment(commentText: string) {
+    async function onSubmitComment(
+      threadThatTheCommentIsSubmittedTo: Thread,
+      commentText: string
+    ) {
       const comment = {
         id: Math.floor(Math.random() * 1000), // FIXME
         text: commentText,
@@ -235,12 +244,13 @@ export function useComments({
         createdBy: await retrieveUser(),
       };
       const newThread = {
-        ...thread!,
-        comments: [...thread!.comments, comment],
+        ...threadThatTheCommentIsSubmittedTo!,
+        isResolved: false,
+        comments: [...threadThatTheCommentIsSubmittedTo!.comments, comment],
       };
       updateThread(newThread);
     },
-    [retrieveUser, thread, updateThread]
+    [retrieveUser, updateThread]
   );
 
   return {

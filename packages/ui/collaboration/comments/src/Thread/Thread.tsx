@@ -167,9 +167,9 @@ export function Thread({
 
   const onSubmitComment = useCallback(
     function onSubmitComment() {
-      onSubmitCommentCallback(textAreaRef.current!.value);
+      onSubmitCommentCallback(thread, textAreaRef.current!.value);
     },
-    [onSubmitCommentCallback]
+    [onSubmitCommentCallback, thread]
   );
 
   const hasComments = useCallback(

@@ -5,3 +5,4 @@ export * from './selectThread';
 export * from './upsertThread';
 export * from './upsertThreadAtSelection';
 export * from './wrapWithThread';
+export { findThreadPath } from './findThreadPath';

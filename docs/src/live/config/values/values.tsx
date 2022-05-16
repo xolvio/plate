@@ -913,6 +913,7 @@ const comments: any = (
             },
           ],
           isResolved: false,
+          createdBy: { ...user },
         }}
       >
         Commented text
@@ -937,6 +938,7 @@ const comments: any = (
             },
           ],
           isResolved: true,
+          createdBy: { ...user },
         }}
       >
         Text with a resolved thread
@@ -955,6 +957,7 @@ const comments: any = (
             },
           ],
           isResolved: true,
+          createdBy: { ...user },
         }}
       >
         Text with another resolved thread

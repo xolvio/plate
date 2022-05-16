@@ -7,7 +7,11 @@ import {
 import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-ui-toolbar';
 
 export const AddThreadToolbarButton = withPlateEventProvider(
-  ({ id, onAddThread, ...props }: ToolbarButtonProps) => {
+  ({
+    id,
+    onAddThread,
+    ...props
+  }: { onAddThread: () => void } & ToolbarButtonProps) => {
     id = useEventPlateId(id);
     const editor = usePlateEditorState(id)!;
 
