@@ -7,10 +7,11 @@ import { createSideThreadStyles } from './SideThread.styles';
 
 type SideThreadProps = {
   position: ThreadPosition;
+  container?: HTMLElement;
 } & StyledProps &
   CommonThreadAndSideThreadProps;
 
-export function SideThread({ position, ...props }: SideThreadProps) {
+export function SideThread({ position, container, ...props }: SideThreadProps) {
   const { root } = createSideThreadStyles(props);
 
   return ReactDOM.createPortal(
@@ -29,6 +30,6 @@ export function SideThread({ position, ...props }: SideThreadProps) {
         showMoreButton
       />
     </div>,
-    document.body
+    container || document.body
   );
 }
