@@ -8,7 +8,6 @@ import {
   TAncestor,
   TDescendant,
   usePlateEditorState,
-  usePlateId,
   usePlateSelection,
   usePlateSelectors,
 } from '@udecode/plate-core';
@@ -30,6 +29,8 @@ import { ReactEditor } from 'slate-react';
 import { v4 as createV4UUID } from 'uuid';
 import { determineAbsolutePosition } from './determineAbsolutePosition';
 import { determineThreadNodeEntryWhenCaretIsNextToTheThreadNodeEntryOnTheLeft } from './determineThreadNodeEntryWhenCaretIsNextToTheThreadNodeEntryOnTheLeft';
+import { usePlateId } from './usePlateId';
+import { usePreviousEditor } from './usePreviousEditor';
 
 function replaceElement<T>(
   elements: T[],
@@ -96,9 +97,12 @@ export function useComments({
 }: {
   retrieveUser: RetrieveUser;
 }): UseCommentsReturnType {
-  const id = usePlateId() ?? undefined;
+  const id = usePlateId();
   const editorKey = usePlateSelectors(id).keyEditor();
   const editor = usePlateEditorState(id);
+  const lastEditor = usePreviousEditor();
+  console.log('editor', editor);
+  console.log('lastEditor', lastEditor);
 
   const selection = usePlateSelection(id);
   const [thread, setThread] = useState<Thread | null>(null);
@@ -111,6 +115,34 @@ export function useComments({
     previousThreadNode,
     setPreviousThreadNode,
   ] = useState<ThreadElement | null>(null);
+
+  const removeHighlightFromPreviousThreadNode = useCallback(
+    function removeHighlightFromPreviousThreadNode(editor2: any) {
+      if (previousThreadNode) {
+        let previousThreadNodeDomNode;
+        try {
+          previousThreadNodeDomNode = ReactEditor.toDOMNode(
+            editor2,
+            previousThreadNode
+          );
+        } catch (error) {}
+
+        if (previousThreadNodeDomNode) {
+          previousThreadNodeDomNode.style.backgroundColor = '';
+        }
+      }
+    },
+    [previousThreadNode]
+  );
+
+  useEffect(
+    function deselectHighlightedCommentedTextFromLastEditor() {
+      if (editor !== lastEditor) {
+        removeHighlightFromPreviousThreadNode(lastEditor);
+      }
+    },
+    [editor, lastEditor, removeHighlightFromPreviousThreadNode]
+  );
 
   const updateThreadPosition = useCallback(
     function updateThreadPosition(threadNodeEntry) {
@@ -283,17 +315,7 @@ export function useComments({
           onCancelCreateThread();
         }
         if (previousThreadNode) {
-          let previousThreadNodeDomNode;
-          try {
-            previousThreadNodeDomNode = ReactEditor.toDOMNode(
-              editor as any,
-              previousThreadNode
-            );
-          } catch (error) {}
-
-          if (previousThreadNodeDomNode) {
-            previousThreadNodeDomNode.style.backgroundColor = '';
-          }
+          removeHighlightFromPreviousThreadNode(editor);
         }
         if (threadNodeEntry && !threadNodeEntry[0].thread.isResolved) {
           const threadNode = threadNodeEntry[0];
@@ -318,10 +340,12 @@ export function useComments({
       showThread,
       hideThread,
       editor,
+      lastEditor,
       selection,
       newThreadThreadNodeEntry,
       onCancelCreateThread,
       previousThreadNode,
+      removeHighlightFromPreviousThreadNode,
     ]
   );
 
