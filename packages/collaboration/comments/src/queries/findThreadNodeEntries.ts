@@ -5,7 +5,7 @@ import {
   Value,
 } from '@udecode/plate-core';
 import { NodeEntry } from 'slate';
-import { ELEMENT_THREAD } from './createThreadPlugin';
+import { ELEMENT_THREAD } from '../createThreadPlugin';
 
 export function* findThreadNodeEntries<V extends Value>(
   editor: PlateEditor<V>

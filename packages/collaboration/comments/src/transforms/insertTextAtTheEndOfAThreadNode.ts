@@ -4,9 +4,9 @@ import {
   PlateEditor,
 } from '@udecode/plate-core';
 import { Path, Transforms } from 'slate';
+import { isTextNode } from '../queries/isTextNode';
+import { last } from '../utils/last';
 import { changeSelectionToBeBasedOnTheNextNode } from './changeSelectionToBeBasedOnTheNextNode';
-import { isTextNode } from './isTextNode';
-import { last } from './last';
 
 export function insertTextAtTheEndOfAThreadNode(
   editor: PlateEditor,

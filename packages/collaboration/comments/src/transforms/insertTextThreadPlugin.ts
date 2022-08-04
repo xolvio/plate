@@ -7,10 +7,10 @@ import {
   TAncestor,
 } from '@udecode/plate-core';
 import { Range } from 'slate';
-import { ELEMENT_THREAD } from './createThreadPlugin';
+import { ELEMENT_THREAD } from '../createThreadPlugin';
+import { ThreadElement } from '../types';
 import { insertTextAtTheEndOfAThreadNode } from './insertTextAtTheEndOfAThreadNode';
 import { insertTextAtTheStartOfAThreadNode } from './insertTextAtTheStartOfAThreadNode';
-import { ThreadElement } from './types';
 
 export function insertTextThreadPlugin(
   editor: PlateEditor,
