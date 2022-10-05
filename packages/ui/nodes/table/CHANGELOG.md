@@ -1,5 +1,7 @@
 # @udecode/plate-table-ui
 
+## 16.4.2
+
 ## 16.4.0
 
 ### Minor Changes

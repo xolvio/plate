@@ -1,5 +1,11 @@
 # @udecode/plate-table
 
+## 16.4.2
+
+### Patch Changes
+
+- [#1819](https://github.com/udecode/plate/pull/1819) by [@zbeyens](https://github.com/zbeyens) – Fix: https://github.com/udecode/editor-protocol/issues/76
+
 ## 16.3.0
 
 ### Minor Changes
